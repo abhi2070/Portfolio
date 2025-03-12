@@ -12222,11 +12222,6 @@ pre .code {
   }
 }
 
-/* sections */
-.section {
-  padding: 70px 10px;
-}
-
 .section .section-title {
   font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
 }
@@ -12249,29 +12244,6 @@ pre .code {
   padding: 100px 0 !important;
 }
 
-.skill-box {
-  padding: 20px;
-  max-width: auto;
-  border: 1px solid #ccc;
-}
-
-.skill-toggle {
-  width: 100%;
-  background: none;
-  color: #71797E; 
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  font-size: 16px;
-  transition: color 0.3s;
-  font-weight: bold;
-  margin-bottom: 10px; 
-  padding: 5px 0; 
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .skill-toggle:hover {
   color: #5a4ea3;
 }
@@ -12288,26 +12260,6 @@ pre .code {
 .arrow {
   font-size: 10px; 
   transition: transform 0.3s ease-in-out;
-}
-
-.skill-content {
-  display: none; 
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
-  padding: 10px;
-  text-align: center;
-  background: white;
-  border-radius: 5px;
-  margin-top: 5px;
-}
-
-.skill-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: #71797E;
 }
 
 .skill-content i {
@@ -12336,5 +12288,82 @@ pre .code {
   padding-left: 0;
   margin-left: 0;
   width: 100%;
+}
+
+
+.section {
+  padding: 40px 20px;
+}
+
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-item {
+  width: 100%;
+  max-width: 400px; 
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skill-toggle {
+  width: 100%;
+  background: #f8f9fa;
+  color: #71797E;
+  padding: 10px;
+  font-size: 18px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-content {
+  display: flex !important;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .skill-box {
+      flex-direction: column;
+      align-items: center;
+  }
+  .skill-item {
+      width: 90%;
+      max-width: none;
+  }
+  .skill-icon {
+      width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-toggle {
+      font-size: 16px;
+      padding: 8px;
+  }
+  .skill-icon {
+      width: 70px;
+  }
 }
 

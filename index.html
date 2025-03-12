@@ -9,20 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/portfolio.css">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script>
-      function toggleSkill(skillId, btn) {
-    var content = document.getElementById(skillId);
-    var arrow = btn.querySelector('.arrow');
-    
-    if (content.style.display === "flex" || content.style.display === "block") {
-        content.style.display = "none";
-        arrow.innerHTML = "&#9658;";
-    } else {
-        content.style.display = "flex"; 
-        arrow.innerHTML = "&#9660;"; 
-    }
-}
-    </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -106,7 +92,7 @@
             <h6 class="section-title mb-6">Skill & Technology</h6>
         <div class="skill-box">
             <div class="skill-item">
-                <button class="skill-toggle" onclick="toggleSkill('programming', this)">Programming Languages<span class="arrow">&#9658;</span></button>
+                <button class="skill-toggle">Programming Languages</button>
                 <div class="skill-content" id="programming">
                     <div class="skill-icon"><i class="fab fa-java"></i>
                         <span>Java</span>
@@ -124,7 +110,7 @@
             </div>
 
             <div class="skill-item">
-                <button class="skill-toggle" onclick="toggleSkill('frameworks', this)">Frameworks & Tools <span class="arrow">&#9658;</span></button>
+                <button class="skill-toggle">Frameworks & Tools</button>
                 <div class="skill-content" id="frameworks">
                     <div class="skill-icon"><i class="fab fa-angular"></i>
                         <span>Angular</span>
@@ -139,7 +125,7 @@
             </div>
 
             <div class="skill-item">
-                <button class="skill-toggle" onclick="toggleSkill('database', this)">Database Management <span class="arrow">&#9658;</span></button>
+                <button class="skill-toggle" >Database Management</button>
                 <div class="skill-content" id="database">
                     <div class="skill-icon">
                         <i class="fa fa-database"></i>
@@ -153,13 +139,13 @@
             </div>
 
             <div class="skill-item">
-                <button class="skill-toggle" onclick="toggleSkill('tools', this)">Developer Tools <span class="arrow">&#9658;</span></button>
+                <button class="skill-toggle">Developer Tools</button>
                 <div class="skill-content" id="tools">
                     <div class="skill-icon"><i class="fa fa-code"></i>
                         <span>Vs Code</span>
                     </div>
                     <div class="skill-icon"><i class="fa fa-code"></i>
-                        <span>Intellij IDEA,</span>
+                        <span>Intellij IDEA</span>
                     </div>
                     <div class="skill-icon"><i class="fa fa-spinner"></i>
                         <span>Postman</span>
@@ -174,11 +160,10 @@
             </div>
 
               <div class="skill-item">
-                <button class="skill-toggle" onclick="toggleSkill('specialized', this)">Specialized Knowledge <span class="arrow">&#9658;</span></button>
+                <button class="skill-toggle">Specialized Knowledge</button>
                 <div class="skill-content" id="specialized">
-                    <div class="skill-icon"><span>Data Structures and Algorithms</span></div>
+                    <div class="skill-icon"><span>DSA</span></div>
                     <div class="skill-icon"><span>OOP’S</span></div>
-                    <div class="skill-icon"><span>CSS3</span></div>
                     <div class="skill-icon"><span>DBMS</span></div>
                     <div class="skill-icon"><span>RestAPI</span></div>
                     <div class="skill-icon"><span>JDBC</span></div>
@@ -253,8 +238,8 @@
                         <h5 class="card-title">IdeaGenSys</h5>
                         <i>Software Developer | Java, SpringBoot, Angular, MySQL</i><br><br>
                         <p>Built and improved EzyProcure’s frontend using Angular, making the UI more user-friendly and responsive for a smoother procurement experience.</p>
-                        <p>Developed and optimized RESTful APIs in Spring Boot, reducing response times by 35% and ensuring seamless communication between services.</p>
-                        <p>Worked on end-to-end integration of APIs with the UI, improving data processing speed and delivering the project on time with zero major issues in production.</p>
+                        <p>Developed and optimized RESTful APIs in Spring Boot, reducing response times by 40% and ensuring seamless communication between services. Integrated third-party APIs to enhance functionality and improve system interoperability.</p>
+                        <p>Worked on end-to-end API integration with the UI, improving data processing speed and delivering the project on time with zero major issues in production. Identified and resolved critical bugs, ensuring a smooth and error-free user experience.</p>
                     </article>
                 </div>
     
@@ -323,7 +308,7 @@
         };
         
         emailjs.send(
-            "service_nxo9ms5",  
+            "service_gw1avxo",  
             "template_s18bdfo",  
             templateParams
         )
